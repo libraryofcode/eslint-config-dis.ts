@@ -1,0 +1,25 @@
+{
+  "name": "@dis.ts/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint configuration file for dis.ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libraryofcode/eslint-config-dis.ts.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/libraryofcode/eslint-config-dis.ts/issues"
+  },
+  "homepage": "https://github.com/libraryofcode/eslint-config-dis.ts#readme",
+  "peerDependencies": {
+    "eslint": "^7.15.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "typescript": "^4.0.2"
+  }
+}
