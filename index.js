@@ -1,3 +1,76 @@
+const memberOrdering = {
+  memberTypes: [
+    // Index signature
+    'signature',
+
+    // Fields
+    'public-static-field',
+    'protected-static-field',
+    'private-static-field',
+
+    'public-decorated-field',
+    'protected-decorated-field',
+    'private-decorated-field',
+
+    'public-instance-field',
+    'protected-instance-field',
+    'private-instance-field',
+
+    'public-abstract-field',
+    'protected-abstract-field',
+    'private-abstract-field',
+
+    'public-field',
+    'protected-field',
+    'private-field',
+
+    'static-field',
+    'instance-field',
+    'abstract-field',
+
+    'decorated-field',
+
+    'field',
+
+    // Constructors
+    'public-constructor',
+    'protected-constructor',
+    'private-constructor',
+
+    'constructor',
+
+    // Methods
+    'public-static-method',
+    'protected-static-method',
+    'private-static-method',
+
+    'public-decorated-method',
+    'protected-decorated-method',
+    'private-decorated-method',
+
+    'public-instance-method',
+    'protected-instance-method',
+    'private-instance-method',
+
+    'public-abstract-method',
+    'protected-abstract-method',
+    'private-abstract-method',
+
+    'public-method',
+    'protected-method',
+    'private-method',
+
+    'static-method',
+    'instance-method',
+    'abstract-method',
+
+    'decorated-method',
+
+    'method',
+  ],
+  order: 'alphabetically',
+};
+
 module.exports = {
   rules: {
     // typescript-eslint rules
@@ -12,7 +85,7 @@ module.exports = {
         singleline: { delimiter: 'semi', requireLast: false },
       },
     ],
-    '@typescript-eslint/member-ordering': [ 2, { default: { order: 'alphabetically' } } ],
+    '@typescript-eslint/member-ordering': [ 2, { default: memberOrdering } ],
     '@typescript-eslint/no-explicit-any': 0,
     // Extension rules
     '@typescript-eslint/brace-style': [ 2, '1tbs', { allowSingleLine: true } ],
@@ -83,7 +156,7 @@ module.exports = {
     'no-undefined': 2,
     'array-bracket-newline': [ 2, { multiline: true } ],
     'array-bracket-spacing': [ 2, 'always' ],
-    'array-element-newline': [ 2, { multiline: true } ],
+    'array-element-newline': [ 2, 'consistent' ],
     'block-spacing': 2,
     'comma-style': 2,
     'computed-property-spacing': 2,
