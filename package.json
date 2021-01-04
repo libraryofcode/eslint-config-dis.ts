@@ -1,6 +1,6 @@
 {
   "name": "@dis.ts/eslint-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ESLint configuration file for dis.ts",
   "main": "index.js",
   "scripts": {

@@ -136,7 +136,7 @@ module.exports = {
     'require-atomic-updates': 1,
     'array-callback-return': 2,
     'block-scoped-var': 1,
-    'curly': [ 2, 'all' ],
+    'curly': [ 2, 'multi-or-nest', 'consistent' ],
     'default-case': 2,
     'dot-location': [ 2, 'property' ],
     'eqeqeq': 2,
